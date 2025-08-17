@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transkrip Nilai</title>
+  <style>
+
+
+    :root{
+      --green:#144c33;
+      --blue:#2684ff;
+      --chip-blue:#88b9ff;
+      --chip-green:#b1e5c0;
+      --chip-purple:#c5aff9;
+      --line:#e9edf2;
+      --card:#fff;
+      --text:#111827;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;color:var(--text);background:#fff}
+
+    /* NAVBAR (meniru screenshot) */
+    .navbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;background:var(--green);padding:10px 16px;color:#fff}
+    .hamburger{width:26px;height:2px;background:#fff;border-radius:2px;box-shadow:0 7px 0 #fff, 0 -7px 0 #fff}
+    .right{display:flex;align-items:center;gap:6px}
+    .logo{width:34px;height:34px;border-radius:50%;background:#0d3a27;border:2px solid #eaf3ea}
+    .caret{font-weight:900;opacity:.85}
+
+    /* TOP BUTTON */
+    .top{max-width:960px;margin:12px auto 0;padding:0 16px}
+    .btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:6px;box-shadow:0 2px 0 rgba(0,0,0,.12)}
+
+    /* CARD + TABLE */
+    .card{max-width:960px;margin:14px auto;padding:0 0 8px;border-radius:12px;background:var(--card);box-shadow:0 10px 24px rgba(0,0,0,.05);border:1px solid #eef1f6}
+    table{width:100%;border-collapse:separate;border-spacing:0}
+    thead th{background:#f6f7fb;text-align:left;font-weight:700;padding:14px 16px;border-bottom:1px solid var(--line)}
+    thead th:nth-child(2),thead th:nth-child(3),thead th:nth-child(4){text-align:center;width:70px}
+    tbody td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+    tbody td:nth-child(2),tbody td:nth-child(3),tbody td:nth-child(4){text-align:center}
+    tbody tr:last-child td{border-bottom:none}
+
+    /* CHIPS (Total SKS/KN/IPK) */
+    .chips{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-start;padding:12px 16px}
+    .chip{border-radius:999px;padding:10px 16px;font-weight:800;color:#0f172a;display:inline-flex;align-items:center;gap:8px}
+    .chip small{font-weight:700;opacity:.85}
+    .chip strong{font-size:15px}
+    .chip.sks{background:var(--chip-blue)}
+    .chip.kn{background:var(--chip-green)}
+    .chip.ipk{background:var(--chip-purple)}
+    .star{font-weight:900}
+
+    @media (max-width:560px){
+      thead th:nth-child(2),thead th:nth-child(3),thead th:nth-child(4){width:auto}
+    }
+.logo{
+      height:40px;
+    }
+    .logo img{
+      height:40px;
+      width:auto;
+      border-radius:50%;
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="hamburger" aria-hidden="true"></div>
+    <div class="right">
+      <div class="logo" aria-hidden="true">
+        <img src="unduhan (1).webp" alt="logo Universitas">
+      </div>
+      <span class="caret" aria-hidden="true">▾</span>
+
+    </div>
+  </div>
+
+  <!-- Tombol CETAK TRANSKRIP -->
+  <div class="top"><a href="#" class="btn">CETAK TRANSKRIP</a></div>
+
+  <!-- Kartu Tabel Nilai -->
+  <div class="card">
+    <table aria-label="Transkrip Nilai">
+      <thead>
+        <tr>
+          <th>Mata Kuliah</th>
+          <th>K</th>
+          <th>N</th>
+          <th>KN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Pengantar Teknologi Informasi</td><td>2</td><td>A</td><td>8</td></tr>
+        <tr><td>Agama Islam</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Etika Profesi</td><td>2</td><td>A</td><td>8</td></tr>
+        <tr><td>Dasar Pemrograman</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Filsafat Pendidikan</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Matematika Komputasi</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Fisika Dasar</td><td>2</td><td>D</td><td>2</td></tr>
+        <tr><td>Organisasi dan arsitektur komputer</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Pancasila</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Bahasa Indonesia</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Bahasa Inggris</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Elektronika Dasar</td><td>2</td><td>B</td><td>6</td></tr>
+        <!-- Diubah sesuai permintaan -->
+        <tr><td>Kewarganegaraan</td><td>2</td><td>A</td><td>8</td></tr>
+        <tr><td>Fisika Teknik</td><td>2</td><td>A</td><td>8</td></tr>
+        <tr><td>Kalkulus</td><td>2</td><td>B</td><td>6</td></tr>
+        <!-- Diubah sesuai permintaan -->
+        <tr><td>Komputer grafis</td><td>3</td><td>A</td><td>12</td></tr>
+        <!-- Diubah sesuai permintaan -->
+        <tr><td>Sistem Operasi</td><td>3</td><td>B</td><td>9</td></tr>
+        <tr><td>Algoritma dan Struktur Data</td><td>2</td><td>B</td><td>6</td></tr>
+        <tr><td>Ke NW an</td><td>2</td><td>B</td><td>6</td></tr>
+      </tbody>
+    </table>
+    <div class="chips">
+      <div class="chip sks"><small>Total SKS :</small> <strong>40</strong></div>
+      <div class="chip kn"><small>Total KN :</small> <strong>127</strong></div>
+      <div class="chip ipk"><small>IPK :</small> <strong>3.18</strong> <span class="star">★</span></div>
+    </div>
+  </div>
+</body>
+</html>
